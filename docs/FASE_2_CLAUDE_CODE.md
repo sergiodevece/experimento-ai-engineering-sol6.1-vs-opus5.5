@@ -78,6 +78,16 @@ Se trata de una **decisión de utilidad musical observada**, no de la afirmació
 
 **Interpretación correcta:** en estas ejecuciones se observó una gran diferencia de resultados, al cambiar el entorno de trabajo. **No está aislada causalmente la contribución del entorno**: también pueden variar soluciones estocásticas, herramientas disponibles, contexto de proyecto y versión de JUCE. No sustituye una comparación controlada replicada.
 
+
+## Controles destacados por el productor: SC HPF y Stereo Link
+
+Durante la evaluación, el productor destacó expresamente dos funcionalidades que amplían la paleta creativa de **DYNAMIC LAB AE**:
+
+- **SC HPF (filtro paso alto del detector de sidechain):** alcance hasta **500 Hz**, según la especificación comunicada para el plugin. Permite reducir la influencia de componentes graves sobre la detección de compresión **sin recortar esos graves del audio principal**. Puede ser especialmente útil en buses de batería, bajo y material de mezcla con gran energía de bajas frecuencias. En el smoke extremo documentado se utilizó **319 Hz**. La pendiente y la respuesta exacta del filtro no fueron medidas independientemente.
+- **Stereo Link variable:** permite graduar el grado de enlace de la detección y/o reducción de ganancia entre los canales, según la implementación concreta del DSP. **100 %** prioriza una reducción conjunta y una imagen más estable; valores inferiores pueden permitir más independencia dinámica y, como contrapartida, más cambios de imagen. En el smoke extremo documentado se utilizó **41 %**. Falta verificar por separado su comportamiento exacto y cómo combina los detectores.
+
+**Valoración del productor:** ambas funciones son puntos fuertes de la propuesta y, combinadas con IMPACT, BODY y ADAPT, contribuyen a su amplia variedad de resultados sonoros. Esta es una valoración de uso creativo; no equivale a mediciones de respuesta del filtro o de correlación estéreo.
+
 ## Pendiente si se convierte en producto
 
 Antes de lanzamiento o distribución: restauración de estado, todos los parámetros bajo automatización rápida, pruebas a distintas frecuencias/buffers, prueba mono real y Mac Intel físico, manejo seguro de picos y estrés, rendimiento prolongado y regresión completa. El cierre documental del experimento no exige realizar ahora estas pruebas.
