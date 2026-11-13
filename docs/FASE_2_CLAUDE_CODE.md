@@ -4,6 +4,9 @@
 **Estado:** segunda fase documentada; candidato musical prometedor, no producto comercial certificado.  
 **Objeto:** explorar el efecto del entorno de ejecución sobre la entrega y el resultado de un mismo encargo. No es una segunda ejecución idéntica dentro de Claude Chat: el entorno cambió de **Claude Chat + Artifacts** a **Claude Code — proyecto**.
 
+
+**Prompt inicial utilizado:** [texto literal conservado](PROMPT_ORIGINAL.md). La diferencia examinada en esta fase es el entorno Claude Code frente a Claude Chat + Artifacts, no una reformulación del encargo.
+
 ## Diseño y condiciones
 
 - **Modelo:** Claude Opus 5.5, esfuerzo Extra, ejecución automática.
