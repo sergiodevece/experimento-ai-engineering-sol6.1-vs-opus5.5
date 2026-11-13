@@ -1,0 +1,3 @@
+# Historiales de agentes — pendientes
+
+Se incorporarán las exportaciones **visibles** de Codex y Claude Opus cuando se reciban del usuario. Se identificarán origen, fecha y posibles omisiones. Un resumen redactado a posteriori se señalará como resumen, no como transcripción literal. No se presentará razonamiento interno privado como si hubiera sido exportado. Antes de publicar se eliminarán secretos y se revisará la privacidad.
