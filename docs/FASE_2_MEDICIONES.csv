@@ -1,0 +1,4 @@
+archivo,duracion_s,frecuencia_hz,canales,rms_dbfs,pico_muestra_dbfs,fotogramas_sobre_0dbfs,valores_no_finitos
+SMOKE_COMPRESOR_EXP_CLAUDE_code_01.wav,28.363667,48000,2,-22.744,-5.044,0,0
+SMOKE_COMPRESOR_EXP_CLAUDE_code_agresivo_01.wav,28.363667,48000,2,-21.546,-3.394,0,0
+SMOKE_COMPRESOR_EXP_CLAUDE_code_agresivo_cliping_auto_01.wav,28.363667,48000,2,-6.009,12.895,75355,0
