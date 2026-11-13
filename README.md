@@ -1,8 +1,30 @@
 # VITAPLUG — AI Engineering Games 2026
 **Codex Sol 6.1 vs Claude Opus 5.5 · Compresor experimental Audio Unit / Logic Pro**  
-**Estudio cerrado: 13 de noviembre de 2026**
+**Fase 1 cerrada y Fase 2 añadida: 13 de noviembre de 2026**
 
-## Resultado
+## Actualización — Fase 2: Claude Code + Opus 5.5
+
+El experimento se amplió usando **el mismo prompt y el mismo modelo Opus 5.5, pero en un entorno diferente: Claude Code (proyecto, modo automático, esfuerzo Extra)**. **No es una revancha dentro del mismo Claude Chat + Artifacts.**
+
+**Resultado observado:** en unos 40 minutos según el usuario, Claude Code desarrolló un compresor distinto (**DYNAMIC LAB AE**, motores CORE + SHAPE, JUCE 8.0.15), compiló y validó un AU universal y lo instaló **tras solicitar autorización**. Declaró 47/47 tests PASS y `auval` PASS en arm64/Rosetta. No requirió nuestra asistencia técnica de compilación. El productor probó el AU en Logic con ajustes exigentes y automatización, **sin detectar clics**, y le otorgó **8/10**. Declaró expresamente que **lo incorporaría a su cadena de trabajo**.
+
+La nueva propuesta supera en valoración musical observada a Codex (**6,5/10**), pero **no convierte retroactivamente en incorrecto el resultado de la Fase 1**: Codex ganó aquella comparación concreta contra Claude Chat + Artifacts. La Fase 2 añade una tercera condición, no una tercera arquitectura idéntica ni una comparación estadísticamente replicada.
+
+| Condición | Valoración de productor | Resultado observable |
+|---|---|---|
+| **Claude Code + Opus 5.5** (Fase 2) | **8/10** | Mejor candidato musical; AU instalado y smokes creativos sin clics reportados |
+| Codex + Sol 6.1 (Fase 1) | **6,5/10** | Ganador de Fase 1, entrega sólida, solo estéreo |
+| Claude Chat + Artifacts + Opus 5.5 (Fase 1) | No apto | Clics persistentes y problemas de interfaz en esa entrega |
+
+**Importante:** la prueba de automatización y la exportación extrema fueron satisfactorias según la escucha, pero un archivo Float32 alcanzó un pico de **+12,90 dBFS**. Esto es deliberado y representable en Float32, **no seguro para todas las cadenas de reproducción sin atenuación previa**. No se ha realizado auditoría exhaustiva de discontinuidades sincronizada con automatización ni certificación comercial.
+
+- **[Informe técnico completo de la Fase 2](docs/FASE_2_CLAUDE_CODE.md)**
+- **[Mediciones de tres smokes (CSV)](docs/FASE_2_MEDICIONES.csv)**
+- **[Informe visible de Claude Code](conversaciones/CLAUDE_CODE_OPUS.md)**
+
+---
+
+## Resultado de la Fase 1 — Codex vs Claude Chat + Artifacts
 **Ganador de esta ejecución: Codex Sol 6.1.** Entregó un AU universal instalable y un compresor estéreo competente que superó las pruebas musicales realizadas. Valoración del productor: **6,5/10**. El sonido se juzgó funcional y versátil, pero relativamente convencional frente al proyecto interno LAB2C.
 
 **Claude Opus 5.5** desarrolló un compresor con PUNCH, BODY y ADAPT, compatible con pistas mono y estéreo, pero requirió intervenciones externas para compilarlo e instalarlo en macOS. Presentó defectos de edición numérica y **clics audibles persistentes** al emplear configuraciones creativas exigentes: **candidato rechazado para uso de producción en esas condiciones**.
@@ -49,7 +71,7 @@ Los tests automatizados y `auval` **no sustituyen el smoke musical físico**. La
 
 Fable 5.2 / Impossible Spaces fue un experimento paralelo de referencia, **no un tercer competidor bajo el mismo prompt**.
 
-Ninguno de los dos compresores justificó continuar su desarrollo frente al nivel y la identidad musical de LAB2C, según la valoración del productor. **El experimento está cerrado.**
+Ninguno de los dos compresores justificó continuar su desarrollo frente al nivel y la identidad musical de LAB2C, según la valoración del productor. **La Fase 1 está cerrada; la Fase 2 está documentada y la versión DYNAMIC LAB AE se conserva como candidata musical, con validaciones profesionales adicionales pendientes.**
 
 ## Documentación
 - [Metodología](docs/METODOLOGIA.md) · [Validación](docs/VALIDACION.md) · [Incidencias](docs/INCIDENCIAS.md) · [Conclusiones](docs/CONCLUSIONES.md)
