@@ -53,7 +53,7 @@ Ninguno de los dos compresores justificó continuar su desarrollo frente al nive
 
 ## Documentación
 - [Metodología](docs/METODOLOGIA.md) · [Validación](docs/VALIDACION.md) · [Incidencias](docs/INCIDENCIAS.md) · [Conclusiones](docs/CONCLUSIONES.md)
-- [Conversaciones](conversaciones/README.md): exportaciones originales pendientes de incorporar.
+- [Informes de agentes](conversaciones/README.md): textos visibles de Claude y Codex incorporados; no equivalen a exportaciones íntegras de sus sesiones.
 - [Manifiesto editorial](MANIFIESTO.md): criterios de preservación y publicación.
 
 Las capturas con otras ventanas, los archivos musicales y los historiales sin revisar permanecen fuera de este repositorio público hasta verificar privacidad y derechos.
