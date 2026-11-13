@@ -2,6 +2,8 @@
 **Codex Sol 6.1 vs Claude Opus 5.5 · Compresor experimental Audio Unit / Logic Pro**  
 **Fase 1 cerrada y Fase 2 añadida: 13 de noviembre de 2026**
 
+**[Prompt original íntegro y literal (instrucción común de las tres condiciones)](docs/PROMPT_ORIGINAL.md)**
+
 ## Actualización — Fase 2: Claude Code + Opus 5.5
 
 El experimento se amplió usando **el mismo prompt y el mismo modelo Opus 5.5, pero en un entorno diferente: Claude Code (proyecto, modo automático, esfuerzo Extra)**. **No es una revancha dentro del mismo Claude Chat + Artifacts.**
